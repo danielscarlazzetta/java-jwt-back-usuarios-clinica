@@ -5,9 +5,10 @@ services:
     image: mysql:latest
     environment:
       MYSQL_ROOT_PASSWORD: passwordparaprueba
-      MYSQL_DATABASE: demo
+      MYSQL_DATABASE: demoJwt
       MYSQL_USER: usuarioprueba
       MYSQL_PASSWORD: passwordUser
+      MYSQL_ALLOW_CLEARTEXT_PASSWORD: 'yes'
     ports:
       - "3307:3306"
     volumes:
